@@ -1,0 +1,86 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --link-color: #333333;
+  --link-hover-color: #a67c52;
+  --button-bg-color: #e0e0e0;
+  --button-text-color: #333333;
+  --footer-bg-color: #f1f1f1;
+}
+
+/* General body styling */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Mulish", sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+  border-bottom: 1px solid #ccc;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--footer-bg-color);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content div {
+  margin: 0 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+footer a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Toggle button styles */
+.toggle-btn {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #ccc;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  --background-color: #1a1a1a;
+  --text-color: #f1f1f1;
+  --link-color: #f1f1f1;
+  --link-hover-color: #d4af37;
+  --button-bg-color: #333333;
+  --button-text-color: #f1f1f1;
+  --footer-bg-color: #333333;
+}
+
+.navbar.dark-mode, footer.dark-mode {
+  background-color: var(--background-color);
+}
+
+.toggle-btn.dark-mode {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
